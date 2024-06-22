@@ -13,15 +13,15 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             body: JSON.stringify({ userId })
         })
-        .then(response => response.json())
-        .then(data => {
-            if (data.message) {
-                document.getElementById('result').innerText = data.message;
-            } else {
-                document.getElementById('result').innerText = `Your team is: ${data.team}`;
-                document.getElementById('pickButton').disabled = true;
-            }
-        });
+            .then(response => response.json())
+            .then(data => {
+                if (data.message) {
+                    document.getElementById('result').innerText = data.message;
+                } else {
+                    document.getElementById('result').innerText = `Your team is: ${data.team}`;
+                    document.getElementById('pickButton').disabled = true;
+                }
+            });
     });
 });
 

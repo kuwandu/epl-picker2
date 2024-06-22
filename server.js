@@ -8,10 +8,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 
 let teams = [
-    "Arsenal", "Aston Villa", "Bournemouth", "Brentford", "Brighton & Hove Albion",
-    "Burnley", "Chelsea", "Crystal Palace", "Everton", "Fulham",
-    "Liverpool", "Luton Town", "Manchester City", "Manchester United", "Newcastle United",
-    "Nottingham Forest", "Sheffield United", "Tottenham Hotspur", "West Ham United", "Wolverhampton Wanderers"
+    "Arsenal", "Aston Villa", "Brighton and Hove Albion", "Chelsea", "Brentford",
+    "Everton", "Liverpool", "Manchester City", "Manchester United", "Newcastle United",
+    "Tottenham Hotspur", "West Ham United"
 ];
 
 let pickedTeams = {};
